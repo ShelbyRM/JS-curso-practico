@@ -71,7 +71,7 @@ form{
     flex-direction: column;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), #121212;
 }
-input[type=number]{
+input[type=number], select{
     background-color: white;
     height: 25px;
     border-radius: 4px;
