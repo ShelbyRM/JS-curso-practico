@@ -1,3 +1,4 @@
+//media
 const lista1 = [
     100,
     200,
@@ -23,8 +24,12 @@ function calcularMediaAritmetica(lista){
     return promedioLista;
     
 }
+console.group("Media");
+console.log(lista1);
+console.log(calcularMediaAritmetica(lista1));
+console.groupEnd();
 
-
+//Mediana
 const lista2 = [
     100,
     200,
@@ -41,10 +46,6 @@ function esPar(numerito){
         return false;
     }
 }
-
-
-
-
 
 function calcularMediana(lista){
     
@@ -64,5 +65,64 @@ function calcularMediana(lista){
 
 }
 
-console.log(calcularMediana(lista2));
 
+console.group("Mediana");
+console.log(lista2);
+console.log(calcularMediana(lista2));
+console.groupEnd();
+
+//Moda
+console.group("Moda");
+const lista3=[2,4,3,4,4,1,3,5];
+
+function calcularModa(lista){
+    const listaCount = {};
+    lista.map(
+            function(elemento){
+                if(listaCount[elemento]){
+                    listaCount[elemento] += 1;
+                }else{
+                    listaCount[elemento] = 1;
+                }
+                
+            }
+            
+        );
+    console.log(lista);
+    console.log(listaCount);
+    
+    const listaArray = Object.entries(listaCount).sort(
+                function(elementoA, elementoB){
+                    return elementoA[1]-elementoB[1];
+                }
+            );
+    console.log(listaArray);
+    console.log(`El elemento más común, la moda, es ${listaArray[listaArray.length -1][0]}`);
+}
+
+calcularModa(lista3);
+console.groupEnd();
+// const lista3Count = {};
+
+// lista3.map(
+//     function(elemento){
+//         if(lista3Count[elemento]){
+//             lista3Count[elemento] += 1;
+//         }else{
+//             lista3Count[elemento] = 1;
+//         }
+        
+//     }
+// );
+// console.group("Mediana");
+// console.log(lista3);
+// console.log(lista3Count);
+
+// const lista2Array = Object.entries(lista3Count).sort(
+//     function(elementoA, elementoB){
+//         return elementoA[1]-elementoB[1];
+//     }
+// );
+
+// console.log(lista2Array);
+// console.log(`El elemento más común, la moda, es ${lista2Array[lista2Array.length -1][0]}`);

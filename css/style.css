@@ -104,3 +104,14 @@ button{
     justify-content: center;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), #121212;
 }
+.box{
+    width: 100vh;
+    height: 50vh;
+    background-color: hotpink;
+    clip-path: circle(50% at 50% 0);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+
+}
