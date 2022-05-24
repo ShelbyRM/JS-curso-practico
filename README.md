@@ -24,3 +24,12 @@ Prácticas de JS del curso de Platzi
 - Tercer paso: Crear funciones
 - Cuarto paso: integrar JS con HTLM
 - Quinto paso: estilar con CSS
+
+
+## Taller # 4 Análisis de salario
+
+- Primer paso: Definir los datos y las fórmulas
+- Segundo paso: Implementar la fórmulas en JS
+- Tercer paso: Crear funciones
+- Cuarto paso: integrar JS con HTLM
+- Quinto paso: estilar con CSS
