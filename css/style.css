@@ -115,3 +115,22 @@ button{
 
 
 }
+ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+li {
+  list-style: none;
+  padding: 10px 20px;
+  
+}
+a {
+    text-decoration: none;
+}
+
+li:hover, a:hover {
+   background-color: beige; 
+   color: black;
+}
